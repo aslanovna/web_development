@@ -7,7 +7,6 @@
   --oval-bg: #f7f8f9;
   --oval-border: #210679;
 }
-
 body {
   font-family: 'Segoe UI', Roboto, Arial, sans-serif;
   background: var(--bg);
@@ -17,17 +16,14 @@ body {
   line-height: 1.5;
   scroll-behavior: smooth;
 }
-
 header {
   text-align: center;
   padding: 20px 0;
 }
-
 header h1 {
   margin: 0 0 8px;
   color: var(--accent);
 }
-
 .oval-menu {
   display: flex;
   flex-wrap: wrap;
@@ -35,7 +31,6 @@ header h1 {
   gap: 10px;
   margin-top: 12px;
 }
-
 .oval-btn {
   display: inline-block;
   padding: 10px 20px;
@@ -47,73 +42,60 @@ header h1 {
   border: 2px solid var(--oval-border);
   transition: all 0.25s ease;
 }
-
 .oval-btn:hover {
   background: var(--accent);
   color: #fff;
   transform: translateY(-2px);
 }
-
 .oval-btn.highlight {
   background: var(--highlight);
   border-color: #ffd7b3;
 }
-
 .oval-btn.lunch {
   background: #fff4e6;
   border-color: #ff9a6a;
   color: #d35f3f;
 }
-
 .category {
   margin-bottom: 40px;
 }
-
 .category h2 {
   border-bottom: 2px solid var(--accent);
   padding-bottom: 8px;
   margin-top: 0;
 }
-
 .items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
-
 .card {
   background: var(--card-bg);
   padding: 16px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
-
 .card.highlight {
   background: var(--highlight);
   border: 1px solid #ffd7b3;
 }
-
 .card h3 {
   margin: 0 0 8px;
   font-size: 1.15rem;
 }
-
 .desc {
   color: #555;
   font-size: 0.95rem;
   margin: 0 0 12px;
 }
-
 .meta {
   font-weight: 600;
   color: #444;
 }
-
 .tag {
   font-size: 0.85rem;
   vertical-align: middle;
 }
-
 footer {
   text-align: center;
   padding: 30px 0;
@@ -122,13 +104,14 @@ footer {
 }
 
 .photo {
-  width: 100%;           /* Растягиваем на всю ширину карточки */
-  height: 180px;         /* Фиксируем высоту — все фото будут ровно 180 пикселей */
-  object-fit: cover;      /* Самое важное: обрезает лишнее, но сохраняет пропорции */
-  border-radius: 8px;     /* Скругление углов под стиль карточки */
-  display: block;         /* Убирает маленький отступ снизу, который бывает у картинок */
-  margin-bottom: 12px;    /* Отступ до названия блюда */
+  width: 100%;           
+  height: 180px;         
+  object-fit: cover;      
+  border-radius: 8px;     
+  display: block;         
+  margin-bottom: 12px;
 }
+
 .top-row {
   background: transparent;
   position: sticky;
@@ -136,7 +119,6 @@ footer {
   z-index: 1000;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-
 .row-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -145,7 +127,6 @@ footer {
   align-items: center;
   padding: 0 20px;
 }
-
 .logo {
   font-weight: 700;
   font-size: 1.1rem;
@@ -153,15 +134,12 @@ footer {
   text-decoration: none;
   text-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
-
-/* Ссылки по центру */
 .nav-links a {
   text-decoration: none;
   color: white;
   margin: 0 16px;
   font-size: 0.95rem;
 }
-
 .btn-reserve {
   display: inline-block;
   padding: 8px 20px;
@@ -171,14 +149,11 @@ footer {
   font-weight: 600;
   transition: all 0.3s ease;
 }
-
 .btn-reserve:hover {
   background: rgba(39, 14, 167, 0.233);
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
 }
-
-
 @media (max-width: 600px) {
   header h1 { font-size: 1.3rem; }
   .items { grid-template-columns: 1fr; }
